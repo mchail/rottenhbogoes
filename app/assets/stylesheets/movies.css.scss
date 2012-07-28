@@ -9,7 +9,7 @@ html, body {
 
 body {
 	padding-top: 0px;
-	margin: 10px;
+	margin: 10px 0;
 }
 
 img {
@@ -22,6 +22,7 @@ h1 {
 	position: relative;
 	top: 15px;
 	color: #fff;
+	margin-left: 10px;
 }
 
 a {
@@ -36,6 +37,10 @@ a {
 		background: none;
 		text-decoration: underline;
 	}
+}
+
+a#hbogolink {
+	color: #fff;
 }
 
 thead {
@@ -76,3 +81,4 @@ table.dataTable tr.odd td.sorting_1 {
 table.dataTable tr.even td.sorting_1 {
 	background-color: #eee;
 }
+

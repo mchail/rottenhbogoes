@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require dataTables/jquery.dataTables
+//= require FixedHeader.min.js
 //= require_tree .

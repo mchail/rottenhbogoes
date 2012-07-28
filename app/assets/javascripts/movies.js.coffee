@@ -7,7 +7,9 @@ $ ->
 	# 	"sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
 	# 	"sPaginationType": "bootstrap"
 	# })
-	$('#movie_table').dataTable(
+	table = $('#movie_table').dataTable(
 		"aaSorting": [[ 7, "desc" ]]
 		"bPaginate": false
 	)
+
+	new FixedHeader(table)

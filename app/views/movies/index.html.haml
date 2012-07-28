@@ -1,4 +1,7 @@
-%h1 Current HBOGO Movie Selection
+%h1
+	Current
+	%a#hbogolink{href: "http://www.hbogo.com"} HBOGO
+	Movie Selection
 
 %table#movie_table
 	%thead
@@ -14,8 +17,9 @@
 	- @movies.each do |movie|
 		- rt = movie.rt_movies.first
 		%tr.movie
-			%td
-				= image_tag movie.image_url, height: 64, width: 64
+			%td{style: "min-width: 80px"}
+				= link_to movie.link do
+					= image_tag movie.image_url, height: 64, width: 64
 			%td{style: "font-weight: bold"}
 				= link_to movie.title, movie.link
 			%td
