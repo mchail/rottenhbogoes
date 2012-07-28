@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hbogo_id: 1
+  imdb_id: 1
+  title: MyString
+  description: MyString
+  expiration: 2012-07-27
+
+two:
+  hbogo_id: 1
+  imdb_id: 1
+  title: MyString
+  description: MyString
+  expiration: 2012-07-27

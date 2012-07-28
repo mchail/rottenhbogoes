@@ -1,0 +1,57 @@
+<%= form_for(@rt_movie) do |f| %>
+  <% if @rt_movie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rt_movie.errors.count, "error") %> prohibited this rt_movie from being saved:</h2>
+
+      <ul>
+      <% @rt_movie.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :runtime %><br />
+    <%= f.number_field :runtime %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :rtid %><br />
+    <%= f.number_field :rtid %>
+  </div>
+  <div class="field">
+    <%= f.label :review %><br />
+    <%= f.text_field :review %>
+  </div>
+  <div class="field">
+    <%= f.label :critics_rating %><br />
+    <%= f.number_field :critics_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :audience_rating %><br />
+    <%= f.number_field :audience_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :image_url %><br />
+    <%= f.text_field :image_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

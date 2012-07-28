@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Hbogo:</b>
+  <%= @movie.hbogo_id %>
+</p>
+
+<p>
+  <b>Imdb:</b>
+  <%= @movie.imdb_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @movie.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @movie.description %>
+</p>
+
+<p>
+  <b>Expiration:</b>
+  <%= @movie.expiration %>
+</p>
+
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>

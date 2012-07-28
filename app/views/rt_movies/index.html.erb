@@ -1,0 +1,41 @@
+<h1>Listing rt_movies</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Rating</th>
+    <th>Runtime</th>
+    <th>Year</th>
+    <th>Rtid</th>
+    <th>Review</th>
+    <th>Critics rating</th>
+    <th>Audience rating</th>
+    <th>Image url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rt_movies.each do |rt_movie| %>
+  <tr>
+    <td><%= rt_movie.title %></td>
+    <td><%= rt_movie.description %></td>
+    <td><%= rt_movie.rating %></td>
+    <td><%= rt_movie.runtime %></td>
+    <td><%= rt_movie.year %></td>
+    <td><%= rt_movie.rtid %></td>
+    <td><%= rt_movie.review %></td>
+    <td><%= rt_movie.critics_rating %></td>
+    <td><%= rt_movie.audience_rating %></td>
+    <td><%= rt_movie.image_url %></td>
+    <td><%= link_to 'Show', rt_movie %></td>
+    <td><%= link_to 'Edit', edit_rt_movie_path(rt_movie) %></td>
+    <td><%= link_to 'Destroy', rt_movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rt movie', new_rt_movie_path %>

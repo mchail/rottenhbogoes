@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @rt_movie.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @rt_movie.description %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @rt_movie.rating %>
+</p>
+
+<p>
+  <b>Runtime:</b>
+  <%= @rt_movie.runtime %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @rt_movie.year %>
+</p>
+
+<p>
+  <b>Rtid:</b>
+  <%= @rt_movie.rtid %>
+</p>
+
+<p>
+  <b>Review:</b>
+  <%= @rt_movie.review %>
+</p>
+
+<p>
+  <b>Critics rating:</b>
+  <%= @rt_movie.critics_rating %>
+</p>
+
+<p>
+  <b>Audience rating:</b>
+  <%= @rt_movie.audience_rating %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @rt_movie.image_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_rt_movie_path(@rt_movie) %> |
+<%= link_to 'Back', rt_movies_path %>

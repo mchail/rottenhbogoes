@@ -1,4 +1,8 @@
 Rottenhbogoes::Application.routes.draw do
+  resources :rt_movies
+
+  resources :movies
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

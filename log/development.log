@@ -1,0 +1,647 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-27 20:45:13 -0700
+Connecting to database specified by database.yml
+
+PG::Error (FATAL:  database "rottenhbogoes_development" does not exist
+):
+  activerecord (3.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:1206:in `initialize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:1206:in `new'
+  activerecord (3.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:1206:in `connect'
+  activerecord (3.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__2003296386146832057__call__1348013938450233422__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/steve/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/steve/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.6ms)
+  Rendered /Users/steve/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-27 20:46:19 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (17.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (7.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateMovies (20120728053152)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (8.1ms)[0m  CREATE TABLE "movies" ("id" serial primary key, "hbogo_id" integer, "imdb_id" integer, "title" character varying(255), "description" character varying(255), "expiration" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120728053152')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (12.3ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+
+  [1m[36m (2.2ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-27 22:32:58 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/mail_test/welcome_email" for 127.0.0.1 at 2012-07-27 22:33:05 -0700
+
+ActionController::RoutingError (No route matches [GET] "/mail_test/welcome_email"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/steve/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/steve/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-07-27 22:33:06 -0700
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Compiled movies.css  (15ms)  (pid 62639)
+Compiled scaffolds.css  (13ms)  (pid 62639)
+Compiled application.css  (67ms)  (pid 62639)
+Compiled jquery.js  (2ms)  (pid 62639)
+Compiled jquery_ujs.js  (0ms)  (pid 62639)
+Compiled movies.js  (232ms)  (pid 62639)
+Compiled application.js  (299ms)  (pid 62639)
+Completed 200 OK in 566ms (Views: 479.2ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2012-07-27 22:33:07 -0700
+Served asset /movies.js - 200 OK (8ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2012-07-27 22:33:07 -0700
+Served asset /movies.css - 200 OK (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-27 22:33:07 -0700
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-27 22:33:07 -0700
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-27 22:33:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-27 22:33:07 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-27 22:33:07 -0700
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-07-27 22:34:45 -0700
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 157ms (Views: 63.1ms | ActiveRecord: 21.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120728053152)
+Migrating to AddAttributesToMovie (20120728053657)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mALTER TABLE "movies" ADD COLUMN "rating" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "movies" ADD COLUMN "introduced" date
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "movies" ADD COLUMN "runtime" integer[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "movies" ADD COLUMN "quality" character varying(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "movies" ADD COLUMN "year" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "movies" ADD COLUMN "genre" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120728053657')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (4.1ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+
+  [1m[36m (2.4ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120728053152)
+Migrating to AddAttributesToMovie (20120728053657)
+Migrating to AddImageUrlToMovies (20120728055103)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "movies" ADD COLUMN "image_url" character varying(255)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120728055103')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (2.5ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+[0m
+  [1m[35m (1.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-07-27 22:56:29 -0700
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.6ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.erb within layouts/application (395.8ms)
+Completed 200 OK in 430ms (Views: 401.1ms | ActiveRecord: 5.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120728053152)
+Migrating to AddAttributesToMovie (20120728053657)
+Migrating to AddImageUrlToMovies (20120728055103)
+Migrating to CreateRtMovies (20120728060300)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120728053152)
+Migrating to AddAttributesToMovie (20120728053657)
+Migrating to AddImageUrlToMovies (20120728055103)
+Migrating to CreateRtMovies (20120728060347)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (8.0ms)[0m  [1mCREATE TABLE "rt_movies" ("id" serial primary key, "title" character varying(255), "description" character varying(255), "rating" character varying(255), "runtime" integer, "year" integer, "rtid" integer, "review" character varying(255), "critics_rating" integer, "audience_rating" integer, "image_url" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120728060347')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (11.7ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+[0m
+  [1m[35m (3.4ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (2.1ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"rt_movies"'::regclass
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'rt_movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120728053152)
+Migrating to AddAttributesToMovie (20120728053657)
+Migrating to AddImageUrlToMovies (20120728055103)
+Migrating to CreateRtMovies (20120728060347)
+Migrating to CreateMoviesRtMoviesTable (20120728062154)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "movies_rt_movies" ("id" serial primary key, "movie_id" integer, "rt_movie_id" integer) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120728062154')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (4.6ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+[0m
+  [1m[35m (2.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (1.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies_rt_movies"'::regclass
+[0m
+  [1m[35m (1.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies_rt_movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (2.5ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"rt_movies"'::regclass
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'rt_movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateMoviesRtMoviesTable (20120728062154)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (5.9ms)[0m  DROP TABLE "movies_rt_movies"
+  [1m[36m (1.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120728062154'[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (4.5ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+
+  [1m[36m (3.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mPK and serial sequence (2.7ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"rt_movies"'::regclass
+
+  [1m[36m (0.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'rt_movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120728053152)
+Migrating to AddAttributesToMovie (20120728053657)
+Migrating to AddImageUrlToMovies (20120728055103)
+Migrating to CreateRtMovies (20120728060347)
+Migrating to AddMovieIdToRtMovies (20120728062448)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "rt_movies" ADD COLUMN "movie_id" integer[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120728062448')
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (2.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+[0m
+  [1m[35m (1.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (1.7ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"rt_movies"'::regclass
+[0m
+  [1m[35m (1.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'rt_movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20120728053152)
+Migrating to AddAttributesToMovie (20120728053657)
+Migrating to AddImageUrlToMovies (20120728055103)
+Migrating to CreateRtMovies (20120728060347)
+Migrating to AddMovieIdToRtMovies (20120728062448)
+Migrating to StringToText (20120728063107)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mALTER TABLE "movies" ALTER COLUMN "title" TYPE text[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "movies" ALTER COLUMN "description" TYPE text
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "movies" ALTER COLUMN "image_url" TYPE text[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "movies" ALTER COLUMN "rating" TYPE text
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "movies" ALTER COLUMN "quality" TYPE text[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "movies" ALTER COLUMN "genre" TYPE text
+  [1m[36m (187.2ms)[0m  [1mALTER TABLE "rt_movies" ALTER COLUMN "title" TYPE text[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "rt_movies" ALTER COLUMN "description" TYPE text
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "rt_movies" ALTER COLUMN "rating" TYPE text[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "rt_movies" ALTER COLUMN "review" TYPE text
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "rt_movies" ALTER COLUMN "image_url" TYPE text[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120728063107')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (6.0ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"movies"'::regclass
+[0m
+  [1m[35m (2.3ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (2.4ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"rt_movies"'::regclass
+[0m
+  [1m[35m (1.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'rt_movies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+Connecting to database specified by database.yml
