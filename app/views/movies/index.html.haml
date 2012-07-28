@@ -17,7 +17,7 @@
 			%td
 				= image_tag movie.image_url, height: 64, width: 64
 			%td{style: "font-weight: bold"}
-				= movie.title
+				= link_to movie.title, movie.link
 			%td
 				= movie.description
 			%td

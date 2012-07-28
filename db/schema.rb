@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120728063107) do
+ActiveRecord::Schema.define(:version => 20120728083618) do
 
   create_table "movies", :force => true do |t|
     t.integer  "hbogo_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20120728063107) do
     t.integer  "year"
     t.text     "genre"
     t.text     "image_url"
+    t.text     "link"
   end
 
   create_table "rt_movies", :force => true do |t|

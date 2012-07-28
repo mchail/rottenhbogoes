@@ -17,7 +17,8 @@ class HbogoScraper
 				image_url: movie.xpath('imageResponses/resourceUrl').first.content,
 				runtime: movie.xpath('//runtime').first.content,
 				quality: movie.xpath('//videoType').first.content,
-				genre: movie.xpath('primaryGenre').first.content
+				genre: movie.xpath('primaryGenre').first.content,
+				link: "http://www.hbogo.com/#home/video&assetID=" + movie.xpath('TKey').first.content + "?videoMode=embeddedVideo?showSpecialFeatures=false/"
 			)
 		end
 	end
