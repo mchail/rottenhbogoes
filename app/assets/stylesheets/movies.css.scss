@@ -9,6 +9,7 @@ html, body {
 
 body {
 	padding-top: 0px;
+	margin: 10px;
 }
 
 img {
@@ -17,7 +18,9 @@ img {
 }
 
 h1 {
-	line-height: 70px;
+	line-height: 30px;
+	position: relative;
+	top: 15px;
 	color: #fff;
 }
 
