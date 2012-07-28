@@ -8,6 +8,9 @@ gem 'rails', '3.2.6'
 gem 'pg'
 gem 'rest-client'
 gem 'nokogiri'
+gem 'haml'
+gem 'jquery-datatables-rails'
+gem 'twitter-bootstrap-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

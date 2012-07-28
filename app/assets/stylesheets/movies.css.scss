@@ -1,3 +1,56 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+	background: url("/assets/bg.png");
+	color: #fff;
+}
+
+body {
+	padding-top: 0px;
+}
+
+h1 {
+	line-height: 70px;
+	color: #fff;
+}
+
+thead {
+	color: #000;
+	background: #fff;
+}
+
+table {
+	color: #333;
+}
+
+.tiny.fresh {
+	background-position: -256px -144px;
+}
+.tiny.rotten {
+	background-position: -272px -144px;
+}
+.icon.tiny {
+	width: 16px;
+	height: 16px;
+}
+.icon {
+	display: inline-block;
+	vertical-align: text-bottom;
+	background: 
+	transparent url('http://images.rottentomatoescdn.com/images/redesign/icons-v2.png?v=06052011') no-repeat -312px -160px;
+}
+
+
+table.dataTable tr.odd {
+	background-color: #ccc;
+}
+
+table.dataTable tr.odd td.sorting_1 {
+	background-color: #ddd;
+}
+
+table.dataTable tr.even td.sorting_1 {
+	background-color: #eee;
+}

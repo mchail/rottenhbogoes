@@ -1,0 +1,42 @@
+%h1 Current HBOGO Movie Selection
+
+%table#movie_table
+	%thead
+		%th{style: "min-width: 80px"}
+		%th Title
+		%th Description
+		%th Introduced
+		%th Expiration
+		%th RT Match
+		%th Review
+		%th Critics
+		%th Audience
+	- @movies.each do |movie|
+		- rt = movie.rt_movies.first
+		%tr.movie
+			%td
+				= image_tag movie.image_url, height: 64, width: 64
+			%td{style: "font-weight: bold"}
+				= movie.title
+			%td
+				= movie.description
+			%td
+				= movie.introduced
+			%td
+				= movie.expiration
+			%td
+				= rt.title rescue "none"
+			%td
+				= rt.review rescue "none"
+			%td
+				= rt.critics_rating >= 0 ? rt.critics_rating : "--" rescue "--"
+				- if !rt.nil? && rt.critics_rating >= 60
+					%span.icon.tiny.fresh
+				- elsif !rt.nil? && rt.critics_rating >= 0
+					%span.icon.tiny.rotten
+			%td
+				= rt.audience_rating >= 0 ? rt.audience_rating : "--" rescue "--"
+				- if !rt.nil? && rt.audience_rating >= 60
+					%span.icon.tiny.fresh
+				- elsif !rt.nil? && rt.audience_rating >= 0
+					%span.icon.tiny.rotten
